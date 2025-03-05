@@ -111,8 +111,6 @@ nav {
 }
 
 .swiper-slide {
-    /* background: linear-gradient(rgba(202, 65, 6, 0.75), rgba(98, 61, 36, 0.85)), url('/api/placeholder/1200/800') no-repeat center center/cover; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), ('images/Slide1.png'); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +121,12 @@ nav {
     max-width: 800px;
     padding: 20px;
     animation: fadeIn 1.5s;
+}
+.slide1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), ('images/Slide1.png'); 
+}
+.slide4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), ('images/Slide4.avif'); 
 }
 
 .hero h1 {
