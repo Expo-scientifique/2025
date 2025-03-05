@@ -139,16 +139,24 @@ nav {
 .logo-showcase {
     padding: 50px 0;
     background-color: var(--white);
-    text-align: center;
+    text-align: center; /* Assure que le contenu est centré horizontalement */
+    display: flex;      /* Utilise flexbox pour un meilleur centrage */
+    justify-content: center;
+    align-items: center;
 }
 
 .big-logo {
-    max-width: 100%;
+    display: flex;       /* Utilise flexbox à l'intérieur également */
+    justify-content: center;
+    align-items: center;
+    width: 100%;         /* Prend toute la largeur disponible */
 }
 
 .big-logo img {
     max-height: 200px;
     max-width: 90%;
+    display: block;     /* Évite les problèmes d'espacement inline */
+    margin: 0 auto;     /* Centre l'image horizontalement */
 }
 
 .swiper-button-next, .swiper-button-prev {
