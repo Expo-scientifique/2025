@@ -50,6 +50,10 @@ nav {
     display: flex;
     align-items: center;
 }
+.site-logo {
+    height: 40px;
+    margin-right: 15px;
+}
 
 .logo-placeholder {
     width: 40px;
