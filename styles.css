@@ -433,6 +433,71 @@ section {
     transform: scale(1.1);
 }
 
+/* Section des sponsors */
+.sponsors {
+    background-color: var(--light);
+    padding: 60px 0;
+    overflow: hidden; /* Cache tout ce qui dépasse */
+}
+
+.sponsor-carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.sponsor-track {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Défilement automatique */
+    width: fit-content; /* S'adapte au contenu */
+}
+
+.sponsor-logo {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.sponsor-logo:hover {
+    transform: translateY(-5px);
+}
+
+.sponsor-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.sponsor-logo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Animation pour le défilement */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Déplace de la moitié de la largeur (les logos se répètent) */
+    }
+}
+
+/* Mettez en pause l'animation au survol */
+.sponsor-carousel:hover .sponsor-track {
+    animation-play-state: paused;
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--tertiary);
