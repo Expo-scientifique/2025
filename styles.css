@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-links a {
-    color: var(--white);
+    color: #623d24;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
