@@ -123,10 +123,10 @@ nav {
     animation: fadeIn 1.5s;
 }
 .slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), ('images/Slide1.png'); 
+    background-image: ('images/Slide1.png'); 
 }
 .slide4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), ('images/Slide4.avif'); 
+    background-image: ('images/Slide4.avif'); 
 }
 
 .hero h1 {
