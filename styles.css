@@ -553,6 +553,9 @@ footer {
     background-color: var(--dark);
     color: var(--white);
     padding: 50px 0 20px;
+    background-image: url(images/motif1.png);
+    background-repeat: repeat-y;
+    background-position: left top;
 }
 
 .footer-content {
