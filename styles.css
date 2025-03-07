@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background: #fff;
+    background: var(--white);
     position: fixed;
     width: 100%;
     height: 70px; 
@@ -80,7 +80,7 @@ nav {
 }
 
 .nav-links a {
-    color: #623d24;
+    color: var(--tertiary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
