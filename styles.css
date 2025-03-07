@@ -512,7 +512,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background-color: var(--light);
+    background-color: var(--white);
     color: var(--tertiary);
 }
 
