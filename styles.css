@@ -18,6 +18,9 @@ body {
     background-color: var(--light);
     color: var(--dark);
     line-height: 1.6;
+    background-image: url(images/motif1.png);
+    background-repeat: repeat-y;
+    background-position: left top;
 }
 
 header {
