@@ -670,7 +670,7 @@ footer {
 }
 
 .day-title {
-    background-color: #2c3e50;
+    background-color: #ca4106;
     color: white;
     padding: 12px 20px;
     margin: 30px 0 15px 0;
@@ -707,12 +707,12 @@ th, td {
 }
 
 th {
-    background-color: #ca4106;
+    background-color: #f2f2f2;
     color: white;
     font-weight: bold;
     position: sticky;
     top: 0;
-    border-bottom: 2px solid #a73500;
+    border-bottom: 2px solid  #ccc;
 }
 
 /* Agrandir la colonne des heures */
