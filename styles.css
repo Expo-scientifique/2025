@@ -662,7 +662,6 @@ footer {
     }
 }
 
-/* Styles pour rendre le tableau responsive */
 /* Styles pour les tableaux du programme */
 .program-wrapper {
     max-width: 90%;
@@ -707,12 +706,19 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #ca4106;
+    color: white;
     font-weight: bold;
-    color: #333;
     position: sticky;
     top: 0;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #a73500;
+}
+
+/* Agrandir la colonne des heures */
+th:first-child, td:first-child {
+    width: 120px;
+    min-width: 120px;
+    white-space: nowrap;
 }
 
 tr:nth-child(even) {
