@@ -662,6 +662,7 @@ footer {
     }
 }
 
+/* Styles pour rendre le tableau responsive */
 .table-container {
     overflow-x: auto;
     margin-bottom: 20px;
@@ -688,41 +689,13 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
- /* Style pour les écrans mobiles */
- @media screen and (max-width: 600px) {
-    .responsive-table {
-        display: block;
-        width: 100%;
+/* Style pour les écrans mobiles */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
     }
     
-    .responsive-table .header-row {
-        display: none;
-    }
-    
-    .responsive-table .data-row {
-        display: block;
-        border: 1px solid #ddd;
-        margin-bottom: 10px;
-        padding: 8px;
-    }
-    
-    .responsive-table .cell {
-        display: flex;
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .responsive-table .cell:last-child {
-        border-bottom: none;
-    }
-    
-    .responsive-table .cell-header {
-        font-weight: bold;
-        width: 120px;
-        min-width: 120px;
-    }
-    
-    .responsive-table .cell-data {
-        flex: 1;
+    th, td {
+        padding: 8px 10px;
     }
 }
