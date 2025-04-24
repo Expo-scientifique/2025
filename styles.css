@@ -663,9 +663,22 @@ footer {
 }
 
 /* Styles pour rendre le tableau responsive */
+* Styles pour les tableaux du programme */
+.day-title {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 20px;
+    margin: 30px 0 15px 0;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 .table-container {
     overflow-x: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 table {
@@ -681,21 +694,44 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
     font-weight: bold;
+    color: #333;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
 }
 
 tr:hover {
-    background-color: #f5f5f5;
+    background-color: #f1f1f1;
 }
 
 /* Style pour les écrans mobiles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .day-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    
     table {
         font-size: 14px;
     }
     
     th, td {
         padding: 8px 10px;
+    }
+}
+
+/* Pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .day-title {
+        font-size: 1rem;
+    }
+    
+    th, td {
+        padding: 6px 8px;
     }
 }
